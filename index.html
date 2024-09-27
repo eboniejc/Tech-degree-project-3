@@ -17,7 +17,7 @@
   </header>
 	<div class="container">
 
-    <form action="index.html" method="post" novalidate>
+    <form id="form" action="index.html" method="post" novalidate>
       <p id="form-hint" class="form-hint"><span class="asterisk">*</span> - required field</p>
 
       <div class="basic-info-and-shirt-box">       
@@ -32,7 +32,8 @@
           
           <label for="email">Email Address: <span class="asterisk">*</span>
             <input type="email" id="email" name="user-email" class="error-border">
-            <span id="email-hint" class="email-hint hint">Email address must be formatted correctly</span>
+            <span id="email-hint-empty" class="email-hint hint" style="display: none;">Email address cannot be empty.</span>
+            <span id="email-hint-invalid" class="email-hint hint" style="display: none;">Email address must be formatted correctly.</span>
           </label>
           
           
